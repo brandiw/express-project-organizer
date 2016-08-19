@@ -1,6 +1,6 @@
 <h1>Create a new project</h1>
 
-<form action="/projects" method="POST">
+<form action="/projects/new" method="POST">
   <div class="form-group">
     <label for="name">Name</label>
     <input type="text" class="form-control" id="name" name="name" required>
@@ -19,6 +19,11 @@
   <div class="form-group">
     <label for="description">Description</label>
     <textarea type="text" class="form-control" id="description" name="description" required></textarea>
+  </div>
+
+  <div class="form-group">
+    Category:
+    <input type="text" class="form-control" name="category">
   </div>
 
   <input type="submit" class="btn btn-primary">
